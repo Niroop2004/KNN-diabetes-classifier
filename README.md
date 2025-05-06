@@ -64,28 +64,28 @@ Target: Outcome (0 = Not Diabetic, 1 = Diabetic)
 - **Insight:** Risk increases significantly with age, especially over 45.
 
 
-# 🚀 Project Features
-✅ Data cleaning (replacing invalid zeros with median values)
+# Project Features
+Data cleaning (replacing invalid zeros with median values)
 
-✅ Feature normalization using MinMaxScaler
+Feature normalization using MinMaxScaler
 
-✅ Training and evaluating KNN for different values of k (1–20)
+Training and evaluating KNN for different values of k (1–20)
 
-✅ Accuracy visualization across k values
+Accuracy visualization across k values
 
-✅ Confusion matrix and classification report
+Confusion matrix and classification report
 
-✅ Manual input prediction with human-readable output (Diabetic or Not Diabetic)
+Manual input prediction with human-readable output (Diabetic or Not Diabetic)
 
 
-# 🧪 Tech Stack
+# Tech Stack
 
 ```
 Python
 Pandas, NumPy, Matplotlib, Seaborn
 scikit-learn
 ```
-## 🔍 How to Use
+## How to Use
 **Clone the repository:**
 git clone https://github.com/your-username/knn-diabetes-predictor.git
 cd knn-diabetes-predictor
