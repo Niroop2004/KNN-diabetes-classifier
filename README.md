@@ -98,6 +98,33 @@ cd knn-diabetes-predictor
 Open KNN_Diabetes_Analysis.ipynb in Jupyter or Google Colab and run all cells.
 Enter new patient data in the input cell to predict diabetes status.
 
+# Performance 
+ ## 1. Confusion Matrix
+ [[89 10]
+ [21 34]]
+**What this means:**
+                **Predicted: 0** 	**Predicted: 1**
+**Actual: 0** 	89 (True Negatives)	  10 (False Positives)
+**Actual: 1**   21 (False Negatives)	34 (True Positives)
+
+**True Negative (TN)** = 89 → Correctly predicted class 0
+
+**False Positive (FP)** = 10 → Incorrectly predicted class 1 when it was 0
+
+**False Negative (FN)** = 21 → Incorrectly predicted class 0 when it was 1
+
+
+# Overall Metrics
+**Accuracy** = 0.80 → 80% of total predictions were correct.
+
+**Macro avg:**
+Averages precision, recall, and F1 equally across both classes, regardless of how many samples each has.
+Shows fairness across classes.
+
+**Weighted avg:**
+Averages precision, recall, and F1 weighted by support (i.e., more weight to class 0 due to more samples).
+More reflective of overall model performance.
+
 # Sample Output
 **Enter the following values:**
 Pregnancies: 2
