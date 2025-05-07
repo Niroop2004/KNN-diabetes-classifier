@@ -3,7 +3,7 @@ This project implements a machine learning pipeline using the K-Nearest Neighbou
 
 # Problem Statement 
 ## Using sample dataset, apply the k-nearest neighbor classifier and analyse its performance with different values of k.
-**Deliverable:** Jupyter notebook/Excel file with all steps and brief documentation. 
+- **Deliverable:** Jupyter notebook/Excel file with all steps and brief documentation. 
 
 # Dataset
 Source: Pima Indians Diabetes Database
