@@ -106,11 +106,11 @@ Enter new patient data in the input cell to predict diabetes status.
  
 **What this means:**
 
-                 Predicted: 0         Predicted: 1
+                     Predicted: 0         Predicted: 1
                  
-**Actual: 0** 	89 (True Negatives)	  10 (False Positives)
+**Actual: 0** 	     89 (True Negatives)	  10 (False Positives)
 
-**Actual: 1**   21 (False Negatives)	34 (True Positives)
+**Actual: 1**        21 (False Negatives)	34 (True Positives)
 
 **True Negative (TN)** = 89 → Correctly predicted class 0
 
