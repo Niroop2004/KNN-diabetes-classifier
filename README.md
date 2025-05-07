@@ -1,6 +1,12 @@
 # KNN-diabetes-classifier
 This project implements a machine learning pipeline using the K-Nearest Neighbours (KNN) algorithm to classify whether a patient is diabetic or not, based on medical attributes. It includes data pre-processing, feature normalization, model training, evaluation for different values of k, and a user input interface for real-time prediction.
 
+# Problem Statement 
+## Using sample dataset, apply the k-nearest neighbor classifier and analyse its performance with different values of k.
+
+
+**Deliverable:** Jupyter notebook/Excel file with all steps and brief documentation. 
+
 # Dataset
 Source: Pima Indians Diabetes Database
 Description: Contains diagnostic measurements from female patients of Pima Indian heritage, including:
