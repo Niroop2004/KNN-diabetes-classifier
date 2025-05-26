@@ -9,7 +9,7 @@ This project implements a machine learning pipeline using the K-Nearest Neighbou
 Here we have used the same model on 2 different datasets 
 - Pima Indians Diabetes Dataset
 - Wine Quality Dataset
------------------------(1)---------------------------------------------------------------------------
+  
 Source: Pima Indians Diabetes Database
 Description: Contains diagnostic measurements from female patients of Pima Indian heritage, including:
 Pregnancies
