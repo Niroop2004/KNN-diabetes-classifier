@@ -187,7 +187,7 @@ The dataset includes the following input features:
 
 ## Target Variable Transformation
 
-The `quality` score is transformed into 3 categories:
+The `quality` score is transformed into 3 categories(Binning):
 
 - **Low (0):** Scores 3 to 5  
 - **Medium (1):** Score 6  
