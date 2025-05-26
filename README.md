@@ -208,11 +208,11 @@ This converts the problem into a **multi-class classification** task.
   - Accuracy on the test set for each value of `k`
 
 
-### ✅ Best Performing `k`
+### Best Performing `k`
 - Best k: 8 with Accuracy: 0.6625
   
 
-### 📊 Confusion Matrix
+### Confusion Matrix
 
 | Actual → / Predicted ↓ | Low | Medium | High |
 |------------------------|-----|--------|------|
@@ -221,18 +221,18 @@ This converts the problem into a **multi-class classification** task.
 | **High**               | 4   |   24   |  19  |
 
 
-### 📃 Classification Report
-          precision    recall  f1-score   support
+### Classification Report
+|         | precision  |  recall | f1-score  | support  |
+|---------|------------|---------|-----------|----------|
+|     Low |     0.66   |   0.79  |   0.72    |  141     |
+|  Medium |      0.56  |   0.52  |   0.54    |  132     |
+|    High |      0.68  |   0.40  |   0.51    |   47     |
 
-     Low       0.66      0.79      0.72       141
-  Medium       0.56      0.52      0.54       132
-    High       0.68      0.40      0.51        47
 
 
+## Manual Prediction Example
 
-## 🔍 Manual Prediction Example
-
-### 🧾 Input: 7.3, 0.65, 0.0, 1.2, 0.065, 15.0, 21.0, 0.9946, 3.39, 0.47, 10.0
+### Input: 7.3, 0.65, 0.0, 1.2, 0.065, 15.0, 21.0, 0.9946, 3.39, 0.47, 10.0
 - Predicted Wine Quality: Medium
 
 
