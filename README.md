@@ -8,7 +8,7 @@ This project implements a machine learning pipeline using the K-Nearest Neighbou
 # Dataset
 Here we have used the same model on 2 different datasets 
 - Pima Indians Diabetes Dataset
-- Wine Quality Dataset(Introductory Paper : Modeling wine preferences by data mining from physicochemical properties)
+- Wine Quality Dataset( Introductory Paper : Modeling wine preferences by data mining from physicochemical properties )
   
 1. Source: Pima Indians Diabetes Database
 Description: Contains diagnostic measurements from female patients of Pima Indian heritage, including:
@@ -21,7 +21,7 @@ BMI
 DiabetesPedigreeFunction
 Age
 
-Target: Outcome (0 = Not Diabetic, 1 = Diabetic)
+   Target: Outcome (0 = Not Diabetic, 1 = Diabetic)
 
 2. Source : UC Irvine Machine Learning Repository
 The dataset used is `winequality-red.csv`.
