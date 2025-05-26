@@ -8,7 +8,7 @@ This project implements a machine learning pipeline using the K-Nearest Neighbou
 # Dataset
 Here we have used the same model on 2 different datasets 
 - Pima Indians Diabetes Dataset
-- Wine Quality Dataset
+- Wine Quality Dataset(Introductory Paper : Modeling wine preferences by data mining from physicochemical properties)
   
 Source: Pima Indians Diabetes Database
 Description: Contains diagnostic measurements from female patients of Pima Indian heritage, including:
@@ -23,7 +23,7 @@ Age
 
 Target: Outcome (0 = Not Diabetic, 1 = Diabetic)
 
-# Feature Interpretations
+# Diabetes Dataset Feature Interpretations
 ## Pregnancies
 **Number of times the patient has been pregnant**  
 - **Typical Range:** 0 to ~17  
@@ -147,6 +147,102 @@ Age: 36
 
 **Prediction Result:** Not Diabetic
 
-# Results
-Best accuracy achieved at k = X
-Performance metrics: Precision, Recall, F1-Score, and Confusion Matrix provided
+# 2 Wine Quality Dataset
+
+Source : UC Irvine Machine Learning Repository
+The dataset used is `winequality-red.csv`.
+using this dataset model classifies red wine samples into **Low**, **Medium**, and **High** quality categories using the **K-Nearest Neighbors (K-NN)** algorithm. 
+
+
+---
+
+## Dataset Overview
+
+- **Dataset:** `winequality-red.csv`
+- **Samples:** 1,599
+- **Features:** 11 physicochemical inputs
+- **Target Variable:** Wine quality (original score from 3 to 8)
+
+---
+
+## Features Description
+
+The dataset includes the following input features:
+
+| Feature Name             | Description                            |
+|--------------------------|----------------------------------------|
+| Fixed Acidity            | Tartaric acid content                  |
+| Volatile Acidity         | Acetic acid content                    |
+| Citric Acid              | Citric acid content                    |
+| Residual Sugar           | Remaining sugar after fermentation     |
+| Chlorides                | Salt content                           |
+| Free Sulfur Dioxide      | Free SO₂ in wine                       |
+| Total Sulfur Dioxide     | Total SO₂ in wine                      |
+| Density                  | Wine density                           |
+| pH                       | Acidity level                          |
+| Sulphates                | Sulfate concentration                  |
+| Alcohol                  | Alcohol content (%)                    |
+
+---
+
+## Target Variable Transformation
+
+The `quality` score is transformed into 3 categories:
+
+- **Low (0):** Scores 3 to 5  
+- **Medium (1):** Score 6  
+- **High (2):** Scores 7 to 8  
+
+This converts the problem into a **multi-class classification** task.
+
+---
+
+## Preprocessing Steps
+
+- **Feature Scaling**:
+  - Applied both `StandardScaler` and `MinMaxScaler`
+- **Train-Test Split**:
+  - 80% training and 20% testing
+  - Stratified to maintain class distribution
+
+---
+
+## Model: K-Nearest Neighbors
+
+- **Hyperparameter Tuning**:
+  - Explored `k` values from **4 to 32**
+- **Evaluation Metric**:
+  - Accuracy on the test set for each value of `k`
+
+---
+### ✅ Best Performing `k`
+- Best k: 8 with Accuracy: 0.6625
+  
+---
+
+### 📊 Confusion Matrix
+
+| Actual → / Predicted ↓ | Low | Medium | High |
+|------------------------|-----|--------|------|
+| **Low**                | 111 |   30   |  0   |
+| **Medium**             | 54  |   69   |  9   |
+| **High**               | 4   |   24   |  19  |
+
+---
+
+### 📃 Classification Report
+          precision    recall  f1-score   support
+
+     Low       0.66      0.79      0.72       141
+  Medium       0.56      0.52      0.54       132
+    High       0.68      0.40      0.51        47
+
+
+---
+
+## 🔍 Manual Prediction Example
+
+### 🧾 Input: 7.3, 0.65, 0.0, 1.2, 0.065, 15.0, 21.0, 0.9946, 3.39, 0.47, 10.0
+- Predicted Wine Quality: Medium
+
+
