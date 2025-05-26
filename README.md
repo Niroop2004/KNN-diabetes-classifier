@@ -153,8 +153,6 @@ Age: 36
 
 # 2 Wine Quality Dataset
 
----
-
 ## Dataset Overview
 
 - **Dataset:** `winequality-red.csv`
@@ -162,7 +160,6 @@ Age: 36
 - **Features:** 11 physicochemical inputs
 - **Target Variable:** Wine quality (original score from 3 to 8)
 
----
 
 ## Features Description
 
@@ -182,7 +179,6 @@ The dataset includes the following input features:
 | Sulphates                | Sulfate concentration                  |
 | Alcohol                  | Alcohol content (%)                    |
 
----
 
 ## Target Variable Transformation
 
@@ -194,7 +190,6 @@ The `quality` score is transformed into 3 categories:
 
 This converts the problem into a **multi-class classification** task.
 
----
 
 ## Preprocessing Steps
 
@@ -204,7 +199,6 @@ This converts the problem into a **multi-class classification** task.
   - 80% training and 20% testing
   - Stratified to maintain class distribution
 
----
 
 ## Model: K-Nearest Neighbors
 
@@ -213,11 +207,10 @@ This converts the problem into a **multi-class classification** task.
 - **Evaluation Metric**:
   - Accuracy on the test set for each value of `k`
 
----
+
 ### ✅ Best Performing `k`
 - Best k: 8 with Accuracy: 0.6625
   
----
 
 ### 📊 Confusion Matrix
 
@@ -227,7 +220,6 @@ This converts the problem into a **multi-class classification** task.
 | **Medium**             | 54  |   69   |  9   |
 | **High**               | 4   |   24   |  19  |
 
----
 
 ### 📃 Classification Report
           precision    recall  f1-score   support
@@ -237,7 +229,6 @@ This converts the problem into a **multi-class classification** task.
     High       0.68      0.40      0.51        47
 
 
----
 
 ## 🔍 Manual Prediction Example
 
