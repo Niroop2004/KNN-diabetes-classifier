@@ -10,7 +10,7 @@ Here we have used the same model on 2 different datasets
 - Pima Indians Diabetes Dataset
 - Wine Quality Dataset(Introductory Paper : Modeling wine preferences by data mining from physicochemical properties)
   
-Source: Pima Indians Diabetes Database
+1. Source: Pima Indians Diabetes Database
 Description: Contains diagnostic measurements from female patients of Pima Indian heritage, including:
 Pregnancies
 Glucose
@@ -22,6 +22,10 @@ DiabetesPedigreeFunction
 Age
 
 Target: Outcome (0 = Not Diabetic, 1 = Diabetic)
+
+2. Source : UC Irvine Machine Learning Repository
+The dataset used is `winequality-red.csv`.
+using this dataset model classifies red wine samples into **Low**, **Medium**, and **High** quality categories using the **K-Nearest Neighbors (K-NN)** algorithm
 
 # Diabetes Dataset Feature Interpretations
 ## Pregnancies
@@ -148,11 +152,6 @@ Age: 36
 **Prediction Result:** Not Diabetic
 
 # 2 Wine Quality Dataset
-
-Source : UC Irvine Machine Learning Repository
-The dataset used is `winequality-red.csv`.
-using this dataset model classifies red wine samples into **Low**, **Medium**, and **High** quality categories using the **K-Nearest Neighbors (K-NN)** algorithm. 
-
 
 ---
 
