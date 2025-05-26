@@ -112,6 +112,8 @@ Enter new patient data in the input cell to predict diabetes status.
  
  [21 34]]
  
+ - Confusion matrix is for test-dataset
+ 
 **What this means:**
 
                      Predicted: 0         Predicted: 1
@@ -219,6 +221,8 @@ This converts the problem into a **multi-class classification** task.
 | **Low**                | 111 |   30   |  0   |
 | **Medium**             | 54  |   69   |  9   |
 | **High**               | 4   |   24   |  19  |
+
+- Confusion matrix is for test-dataset
 
 
 ### Classification Report
