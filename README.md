@@ -158,6 +158,8 @@ Age: 36
 
 # 2 Wine Quality Dataset
 
+Source : UC Irvine Machine Learning Repository The dataset used is winequality-red.csv. using this dataset model classifies red wine samples into Low, Medium, and High quality categories using the K-Nearest Neighbors (K-NN) algorithm
+
 ## Dataset Overview
 
 - **Dataset:** `winequality-red.csv`
